@@ -1,5 +1,7 @@
 package CrashCourse;
 
+import java.util.ArrayList;
+
 public class CrashCourse {   //Class header
     
     public static void main(String[] args){
@@ -98,6 +100,33 @@ public class CrashCourse {   //Class header
 
         System.out.println("Rows:" + arrayGrid1.length);
         System.out.println("Collumns:" + arrayGrid1[0].length);
+
+        int[][] arryGrid2 = { {7, 8, 9},
+                               {4, 5, 6},
+                               {1, 2, 3} };
+        
+        System.out.println(arryGrid2[0][1] + arryGrid2[2][2]); //access number 8 
+        System.out.println(arryGrid2[2][2]);
+
+        System.out.println(arryGrid2);
+
+        // ARRAY LISTS
+        // Can be any size. Los of built-in functions to help.
+        // Avoid primitive data types. Special classes for Integer, Double, boolean, Strong. Called "wrapped"
+
+        ArrayList<String> arrylst = new ArrayList<>();
+
+        arrylst.add("Word 1");
+        arrylst.add("Word 2");
+        arrylst.add("Word 3");
+        arrylst.remove(0);
+        arrylst.add(0, "Word 4");
+        arrylst.set(2, "Word 5");
+
+        System.out.println(arrylst);
+        System.out.println(arrylst.size());
+        System.out.println(arrylst.get(2));
+
 
 
 
