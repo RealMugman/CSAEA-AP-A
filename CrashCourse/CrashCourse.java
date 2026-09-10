@@ -191,7 +191,7 @@ public class CrashCourse {   //Class header
 
         for(int row = 0; row < arryMatrix.length; row++) {
             for(int col = 0; col < arryMatrix[row].length; col++) {
-                System.out.println(arryMatrix[row][col]);
+                System.out.println(arryMatrix[row][col] + " ");
             }
             System.out.println();
         }
