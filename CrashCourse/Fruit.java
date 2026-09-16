@@ -1,11 +1,11 @@
 package CrashCourse;
 
 public class Fruit {
-    String name;
-    boolean isSweet;
-    boolean isSour;
+    private String name;
+    private boolean isSweet;
+    private boolean isSour;
     String color;
-    int age;
+    private int age;
     boolean isPickedFromGround;
     boolean isPickedFromTree;
     boolean isRipe;
@@ -20,6 +20,7 @@ public class Fruit {
 
     public void eat() {
         isEat = true;
+        isRipe = true;
     }
     public void Pick() {
         isRipe = true;
