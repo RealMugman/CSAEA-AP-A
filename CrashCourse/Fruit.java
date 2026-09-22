@@ -11,6 +11,8 @@ public class Fruit {
     boolean isRipe;
     boolean isEat;
     boolean isHarvest;
+    private int growthStage; // 1 - 5
+    double weight; // oz 
 
     public void fruit(String name, boolean isRipe, int age) {
         this.name = name;
@@ -30,9 +32,28 @@ public class Fruit {
     }
     public void Grown() {
         isHarvest = true;
+        growthStage = 5;
+        if (isHarvest = true) {
+            System.out.println("Fruit ready for harvest")
+        }
     }
     public void Growing() {
-        isHarvest = false; 
+        isHarvest = false;
+        growthStage < 5; 
+    }
+    public void water() {
+        growthStage += 1;
+        weight += 1.0; 
+        if (growthStage == 5) {
+            isHarvest = true;
+            System.out.println("Fruit ready for harvest");
+        }
+    }
+    public void checkGrowth() {
+        System.out.println("The fruit is at" + growthStage);
+    }
+    public void checkWeight() {
+        System.out.println("The fruit weighs" + weight);
     }
 }
 

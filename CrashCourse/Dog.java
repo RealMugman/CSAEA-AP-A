@@ -35,5 +35,6 @@ public class Dog {
             energyLevel += 1;
         }
     }
+
     }
 
