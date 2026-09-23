@@ -1,4 +1,4 @@
-package CrashCourse;
+
 
 public class Dog {
     

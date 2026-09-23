@@ -1,3 +1,4 @@
+
 public class Fruit {
     private String name;
     private boolean isSweet;
@@ -47,10 +48,10 @@ public class Fruit {
         }
     }
     public void checkGrowth() {
-        System.out.println("The fruit is at" + growthStage);
+        System.out.println("The fruit is at " + growthStage);
     }
     public void checkWeight() {
-        System.out.println("The fruit weighs" + weight);
+        System.out.println("The fruit weighs " + weight);
     }
 }
 
