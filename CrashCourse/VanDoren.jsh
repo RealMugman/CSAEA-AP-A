@@ -1,3 +1,4 @@
+import module java.base;
 public class Fruit {
     private String name;
     private boolean isSweet;
@@ -53,5 +54,26 @@ public class Fruit {
         System.out.println("The fruit weighs" + weight);
     }
 }
-
-
+Fruit f1 = new Fruit("Apple", true, 5);
+Fruit f1 = new Fruit("Bananna", true, 5);
+Fruit f2 = new Fruit("Bananna", true, 5);
+Fruit f3 = new Fruit("StrawBerry", true, 5);
+Fruit f4 = new Fruit("Blueberry", true, 5);
+Fruit f5 = new Fruit("Mango", true, 5);
+f1.color;
+f1.isPickedFromGround;
+f1.isPickedFromTree;
+f1.isRipe;
+f1.isEat;
+f1.isHarvest;
+f1.weight;
+f1.eat;
+f2.pick
+f1.eat();
+f2.pick();
+f3.bad();
+f4.grown();
+f5.growing();
+f1.water();
+f2.checkGrowth();
+f1.checkWeight();
