@@ -1,4 +1,3 @@
-package CrashCourse;
 
 import java.util.ArrayList;
 
