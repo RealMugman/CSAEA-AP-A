@@ -50,7 +50,7 @@ public class Athlete {
         System.out.println("Max Bench: " + bench + "Max Squat: " + squat + "Max deadlift: " + deadlift);
     }
     public void eat() {
-        weight ++;
+        weight = 160.0 + 1.0;
     }
     public void checkWeight() {
         System.out.println("You weigh: " + weight + "lbs");
