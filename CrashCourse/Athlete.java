@@ -5,7 +5,7 @@ public class Athlete {
     private int speed;
     private double weight = 160.0;
     private String sport;
-    boolean injury;
+    private boolean injury;
     boolean starting;
     private String name;
     double fortyYardTime;
@@ -21,8 +21,8 @@ public class Athlete {
 
     public void workout() {
         weight -= 1.0;
-        if (speed < 100) {
-            speed ++;
+        if (strength < 100) {
+            strength ++;
         }
         System.out.println("Strength increased by 1, Stength at " + strength);
         if (strength == 100) {
@@ -62,18 +62,20 @@ public class Athlete {
         System.out.println("You weigh: " + weight + " lbs");
     }
     public void fortyTime() {
-        if (speed == 100) {
-            fortyYardTime = 4.2;
-            System.out.println("Forty yard time is " + fortyYardTime);
-        }
-        if (speed > 100) {
-            fortyYardTime = 4.6;
-            System.out.println("Forty yard time is " + fortyYardTime);
-        }
-        if (speed > 50) {
-            fortyYardTime = 5.0;
-        }
-
+    if (speed >= 100) {
+        fortyYardTime = 4.2;
     }
+    else if (speed >= 50) {
+        fortyYardTime = 4.6;
+    } 
+    else if (speed >= 25) {
+        fortyYardTime = 5.0;
+    } 
+    else {
+        fortyYardTime = 6.0;
+    }
+    
+    System.out.println("Forty yard time is " + fortyYardTime);
+}
 
 }
