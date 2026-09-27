@@ -13,10 +13,10 @@ public class Athlete {
     int squat;
     int deadlift;
 
-    public Athlete(String sport, boolean starting, boolean injury) {
+    public Athlete(String sport, boolean starting, String name) {
         this.sport = sport;
         this.starting = starting;
-        this.injury = injury;
+        this.name = name;
     }
 
     public void workout() {
@@ -55,8 +55,9 @@ public class Athlete {
         deadlift = strength * 4;
         System.out.println("Max Bench: " + bench + " " + "Max Squat: " + squat + " " + "Max deadlift: " + deadlift);
     }
-    public void eat() {
-        weight = weight + 1.0;
+    public void eat(double poundsGained) {
+        this.weight += poundsGained;
+        System.out.println("Pounds gained: " + poundsGained + " lbs");
     }
     public void checkWeight() {
         System.out.println("You weigh: " + weight + " lbs");
@@ -75,7 +76,24 @@ public class Athlete {
         fortyYardTime = 6.0;
     }
     
-    System.out.println("Forty yard time is " + fortyYardTime);
-}
+    System.out.println("Forty yard time is " + fortyYardTime);  
+    }
+    public void checkState() {
+        System.out.println("Athlete Name: " + name + 
+        "  Sport: " + sport + 
+        "  Weight: " + weight + 
+        " lbs  Starting: " + starting + 
+        "  Injured: " + injury + 
+        "  Speed: " + speed + 
+        "  Strength: " + strength);
+    }
+    public void rest(int hourSlept, boolean goodMeal) {
+        if (hourSlept >= 8 && goodMeal == true) {
+            injury = false;
+            System.out.println("Injury healed, cleared for play");
+        } else {
+            System.out.println("Injury not healed, get more sleep and eat better");
+        }
+    }
 
 }
