@@ -1,22 +1,23 @@
 public class Athlete {
 
-    private int strength;
-    private int reactionSpeed;
-    private int speed;
+    private int strength = 50;
+    private int reactionSpeed = 50;
+    private int speed = 50;
     private double weight = 160.0;
     private String sport;
     private boolean injury;
-    boolean starting;
+    private boolean starting;
     private String name;
-    double fortyYardTime;
-    int bench;
-    int squat;
-    int deadlift;
+    private double fortyYardTime;
+    private int bench;
+    private int squat;
+    private int deadlift;
 
-    public Athlete(String sport, boolean starting, String name) {
+    public Athlete(String sport, boolean starting, String name, boolean injury) {
         this.sport = sport;
         this.starting = starting;
         this.name = name;
+        this.injury = injury;
     }
 
     public void workout() {
@@ -89,7 +90,7 @@ public class Athlete {
     }
     public void rest(int hourSlept, boolean goodMeal) {
         if (hourSlept >= 8 && goodMeal == true) {
-            injury = false;
+            this.injury = false;
             System.out.println("Injury healed, cleared for play");
         } else {
             System.out.println("Injury not healed, get more sleep and eat better");
