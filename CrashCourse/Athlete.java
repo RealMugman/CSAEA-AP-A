@@ -19,13 +19,23 @@ public class Athlete {
         this.name = name;
         this.injury = injury;
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String newName) {
+        name = newName;
+    }
+    public double getWeight() {
+        return weight;
+    }
 
     public void workout() {
         weight -= 1.0;
         if (strength < 100) {
             strength ++;
+            System.out.println("Strength increased by 1, Stength at " + strength);
         }
-        System.out.println("Strength increased by 1, Stength at " + strength);
+        
         if (strength == 100) {
             System.out.println("Strength maxed out");
         }
@@ -34,8 +44,9 @@ public class Athlete {
         weight -= 1.5;
         if (speed < 100) {
             speed ++;
+            System.out.println("Speed state increased by 1, speed at " + speed);
         }
-        System.out.println("Speed state increased by 1, speed at " + speed);
+        
         if (speed == 100) {
             System.out.println("Speed maxed out");
         }
@@ -44,8 +55,9 @@ public class Athlete {
     public void watchFilm() {
         if (reactionSpeed < 100) {
             reactionSpeed ++;
+            System.out.println("reaction speed increased by one, reaction speed now at " + reactionSpeed);
         }
-        System.out.println("reaction speed increased by one, reaction speed now at " + reactionSpeed);
+        
         if (reactionSpeed == 100) {
             System.out.println("Reaction speed maxed out");
         }
@@ -67,16 +79,12 @@ public class Athlete {
     if (speed >= 100) {
         fortyYardTime = 4.2;
     }
-    else if (speed >= 50) {
+    else if (speed >= 80) {
         fortyYardTime = 4.6;
-    } 
-    else if (speed >= 25) {
+    }
+    else if (speed >= 50) {
         fortyYardTime = 5.0;
     } 
-    else {
-        fortyYardTime = 6.0;
-    }
-    
     System.out.println("Forty yard time is " + fortyYardTime);  
     }
     public void checkState() {

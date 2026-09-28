@@ -25,6 +25,8 @@ public class AthleteTester {
         b.checkState();
 
         b.rest(5, true);
+        b.getName();
+        b.setName("Jack");
         b.trainSpeed();
         b.maxLift();
         b.fortyTime();
