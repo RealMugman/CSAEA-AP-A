@@ -14,12 +14,28 @@ public class Email {
         return address.indexOf("@");
     }
     public String getUser() {
-        return "User";
+        return address.substring(0, address.indexOf("@"));
     }
     public String getDomain() {
-        return ".com";
+        return address.substring(address.indexOf("@") + 1);
     }
     public boolean isSchool() {
-        return false;
+        return address.indexOf("hcvsd.org") != -1;
     }
+    public String getFirstName(String address) {
+        String user = getUser();
+        return user.substring(0, user.indexOf("@"));
+    }
+    public String changeDomain(String newDomain) {
+        return getUser() + "@" + newDomain;
+    }
+    public String getLabel() {
+        if (isSchool()) {
+            return "School:" + getDomain();
+        }
+        else {
+            return "Personal:" + getDomain();
+        }
+    }
+    
 }
