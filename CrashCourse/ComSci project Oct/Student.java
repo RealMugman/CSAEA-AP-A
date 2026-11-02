@@ -14,6 +14,9 @@ public class Student {
             return "student name: " + name + ",Grade: " + gradeLevel + ", Gpa: " + gpa + ", Enrolled: " + isEnrolled;
         }
         public boolean matchingEmail(String email, String exDomain) {
+            if (!isEnrolled) {
+                return false;
+            }
             int atIndex = email.indexOf("@");
             if (atIndex == -1) {
                 return false; 
