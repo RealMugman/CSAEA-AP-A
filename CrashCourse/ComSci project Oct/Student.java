@@ -1,6 +1,5 @@
 public class Student { 
     private String name;
-    private int grade;
     private double gpa; 
     private boolean isEnrolled;
     private int gradeLevel;
@@ -10,6 +9,7 @@ public class Student {
         this.gradeLevel = gradeLevel; 
         this.gpa = gpa; 
         this.isEnrolled = isEnrolled;
+    }
         public String toString() {
             return "student name: " + name + ",Grade: " + gradeLevel + ", Gpa: " + gpa + ", Enrolled: " + isEnrolled;
         }
@@ -22,7 +22,7 @@ public class Student {
             return domain.equals(exDomain); 
         }
         public boolean updateGpa(double pointsAdded) {
-            if (!isEnrollled) {
+            if (!isEnrolled) {
                 return false;
             }
             this.gpa += pointsAdded;
@@ -32,10 +32,9 @@ public class Student {
             return true; 
         }
         public double checkGpa() {
-            reutnr gpa;
+            return gpa;
         }
         public String getName() {
             return name; 
-        }
-    }
+        }  
 }
