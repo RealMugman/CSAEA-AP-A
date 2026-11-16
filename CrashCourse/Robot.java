@@ -34,11 +34,5 @@ public class Robot {
     public String toString() {
         return name + " [" + serial + " ]";  
     }
+ }
 
-    public boolean serialContains(String part) {
-        return serial.indexOf(String part) {
-            r
-        }
-
-        }
-}
