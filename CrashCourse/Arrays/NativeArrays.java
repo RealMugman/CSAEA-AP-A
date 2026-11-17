@@ -95,7 +95,7 @@ public class NativeArrays {
             if ( highest == temps1[i]) {
                 highestIndex = i;
             }
-            System.out.println("Highest: " + highestIndex);
+            System.out.println("Highest: " + highest + " Index: " + highestIndex);
         }
 
         // Challenge: Random Fill
