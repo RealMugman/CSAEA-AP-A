@@ -10,7 +10,7 @@ public class ArrayListsTester {
 
         ArrayLists.showIndex(animals);
 
-        int ArrayLists.findIndex(animals, "blobfish");
+        int index = ArrayLists.findINdex(animals, "blobfish");
         System.out.println(index);
     }
 
