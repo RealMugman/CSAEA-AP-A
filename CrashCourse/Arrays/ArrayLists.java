@@ -172,11 +172,47 @@ public class ArrayLists {
   */
      public static void removeAll(ArrayList<String> animals, String target) {
         for (int i = animals.size() - 1; i >= 0; i-- ) {
-            if (animals.get(i).equals(i)) {
+            if (animals.get(i).equals(target)) {
                 animals.remove(i);
             }
         }
      }
+
+
+     public static ArrayList<String> longNames(ArrayList<String> animals){
+        
+        int total = 0;
+        String longest= animals.get(0);
+        boolean hasFrog = false;
+
+        for (String name : animals) {
+            total += name.length();
+            
+            if (name.length() > longest.length()) {
+                longest = name;
+            }
+        }
+        Object name;
+        if (name.equals("glass frog")) {
+            hasFrog = true;
+        }
+        double avg = (double) total / animals.size();
+
+        ArrayList<String> result = new ArrayList<>();
+
+        for (String ame : animals) {
+            if (name.length() > avg) {
+                result.add((String) name);
+            }
+        }
+        System.out.println("longest: " + longest);
+        System.out.println("Glass Frog? " + hasFrog);
+        
+        return result;
+
+     }
+
+
         
 
 
